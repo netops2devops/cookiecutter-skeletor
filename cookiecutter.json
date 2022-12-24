@@ -1,0 +1,19 @@
+{
+    "full_name": "Kapil Agrawal",
+    "email": "noneifyourconcern@email.com",
+    "github_username": "netops2devops",
+    "project_name": "new pyproject",
+    "package_name": "core",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "modern skeleton for a python project",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "version": "0.1.0",
+    "use_pytest": "y",
+    "use_black": "y",
+    "use_pypi_deployment_with_travis": "n",
+    "add_pyup_badge": "n",
+    "command_line_interface": ["Click", "No command-line interface"],
+    "create_author_file": "y",
+    "open_source_license": ["MIT", "BSD-3-Clause", "ISC", "Apache-2.0", "GPL-3.0-only", "Not open source"],
+    "use_google_docstrings": "n"
+  }
