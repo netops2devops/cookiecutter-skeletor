@@ -12,7 +12,7 @@
     "use_black": "y",
     "use_pypi_deployment_with_travis": "n",
     "add_pyup_badge": "n",
-    "command_line_interface": ["Click", "No command-line interface"],
+    "cli": "y",
     "create_author_file": "y",
     "open_source_license": ["MIT", "BSD-3-Clause", "ISC", "Apache-2.0", "GPL-3.0-only", "Not open source"],
     "use_google_docstrings": "n"
