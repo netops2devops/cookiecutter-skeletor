@@ -3,7 +3,7 @@
     "email": "noneifyourconcern@email.com",
     "github_username": "netops2devops",
     "project_name": "new pyproject",
-    "package_name": "core",
+    "inner_package_name": "core",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "modern skeleton for a python project",
     "pypi_username": "{{ cookiecutter.github_username }}",
@@ -11,7 +11,6 @@
     "use_pytest": "y",
     "use_black": "y",
     "use_pypi_deployment_with_travis": "n",
-    "add_pyup_badge": "n",
-    "cli": "y",
-    "open_source_license": ["MIT", "BSD-3-Clause", "ISC", "Apache-2.0", "GPL-3.0-only", "Not open source"]
+    "cli_builder": "y",
+    "license": ["Apache-2.0", "MIT", "BSD-3-Clause", "GPL-3.0-only", "None"]
   }
