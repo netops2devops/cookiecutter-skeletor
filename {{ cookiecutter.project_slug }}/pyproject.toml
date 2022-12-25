@@ -3,14 +3,8 @@ name = "{{cookiecutter.project_name}}"
 version = "{{cookiecutter.version}}"
 description = "{{cookiecutter.project_short_description}}"
 authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
-license = "{{cookiecutter.open_source_license}}"
+license = "{{cookiecutter.license}}"
 readme = "README.md"
-
-{% if cookiecutter.package_name != cookiecutter.project_name.replace('-', '_') -%}
-packages = [
-    { include = "{{cookiecutter.package_name}}", from = "src" },
-]
-{% endif -%}
 
 [tool.poetry.dependencies]
 python = "^3.8"
