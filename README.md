@@ -1,19 +1,19 @@
 # About 
 
-This is a slightly opinionated yet simple `cookiecutter` template that will generate a barebones python project ready to be used with the following: 
+This is a slightly opinionated yet simple `cookiecutter` template for my personal use that generates a barebone python project ready to be used with the following: 
 
 - `Black` linter
 - `pytest` for unit testing
 - `Poetry` for package management
 - `Docker` and `docker-compose`
 - `Makefile`
-- `Typer` for cli builder
-- `bandit` for security linter
+- [Typer](http://typer.tiangolo.com) for CLI apps
+- [bandit](https://github.com/PyCQA/bandit)
 
 # Requirements 
 
-- cookiecutter
-- poetry 
+- [cookiecutter](https://github.com/cookiecutter/cookiecutter)
+- [poetry](https://python-poetry.org)
 
 # Usage 
 
@@ -55,8 +55,14 @@ Finally, install the dependeneices in `pyproject.toml` under the new project roo
 poetry install 
 ```
 
-# To do
-Add some post_gen hooks to further customize layout based on user input. 
+## To do
 
-# Author
+- Add `post_gen_project` hooks to further customize layout based on user input
+    - generate CI file(s) based on user choice (github vs. gitlab)
+    - auto initialize a git repo (with base git config) upon project creation
+- Template README, Makefile, CI file
+- preconfigure linters
+- Add Hashicorp Vault integration
+
+## Authors
 Kapil Agrawal
