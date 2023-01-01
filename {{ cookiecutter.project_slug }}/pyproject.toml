@@ -10,6 +10,8 @@ readme = "README.md"
 python = "^3.8"
 bandit = "^1.7.4"
 coverage = "*"
-{% if cookiecutter.use_black == 'y' %}black = "^22.12.0"{% endif %}
-{% if cookiecutter.use_pytest == 'y' %}pytest = "^7.2.0"{% endif %}
+flake8 = "*"
+black = "^22.12.0"
+pytest = "^7.2.0"
+mypy= "*"
 {% if cookiecutter.cli_builder == 'y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}

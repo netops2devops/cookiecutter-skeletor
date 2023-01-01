@@ -1,15 +1,13 @@
 {
     "full_name": "Kapil Agrawal",
     "email": "noneofyourbusiness@email.com",
-    "github_username": "netops2devops",
+    "vcs": ["Gitlab", "Github", "other"],
+    "vcs_username": "netops2devops",
     "project_name": "awesome-pyproject",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "inner_package_name": "{{ cookiecutter.project_slug }}",
     "project_short_description": "modern skeleton for a python project",
-    "pypi_username": "{{ cookiecutter.github_username }}",
     "version": "0.1.0",
-    "use_pytest": "y",
-    "use_black": "y",
-    "cli_builder": "y",
+    "cli_builder": "n",
     "license": ["Apache-2.0", "MIT", "BSD-3-Clause", "GPL-3.0-only", "None"]
   }

@@ -1,1 +1,0 @@
-### Setting up a development environment for {{ cookiecutter.project_slug }}

@@ -2,13 +2,14 @@
 
 This is a slightly opinionated yet simple `cookiecutter` template for my personal use that generates a barebone python project ready to be used with the following: 
 
-- `Black` linter
-- `pytest` for unit testing
-- `Poetry` for package management
-- `Docker` and `docker-compose`
-- `Makefile`
-- [Typer](http://typer.tiangolo.com) for CLI apps
-- [bandit](https://github.com/PyCQA/bandit)
+- `Black`     for code formatting
+- `pytest`    for unit testing
+- `Poetry`    for package management
+- `coverage`  for test coverage reporting
+- `flake8`    for code linting
+- `mypy`      for type checking
+- [Typer](http://typer.tiangolo.com) for building CLI apps
+- [bandit](https://github.com/PyCQA/bandit) for security linting
 
 # Requirements 
 
@@ -31,10 +32,6 @@ mytestproject
 ├── Dockerfile
 ├── Makefile
 ├── README.md
-├── dev
-│   ├── Dockerfile
-│   ├── development.md
-│   └── docker-compose.yml
 ├── docker-compose.yml
 ├── docs/
 ├── examples/

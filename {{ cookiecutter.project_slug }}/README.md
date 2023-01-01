@@ -10,8 +10,8 @@
 
 ## Contribute
 
-## Author 
-{{ cookiecutter.full_name }} [{{cookiecutter.github_username}}](https://github.com/{{cookiecutter.github_username}})
+### Author 
+{{ cookiecutter.full_name }} [{{cookiecutter.vcs_username}}](https://{{cookiecutter.vcs}}.com/{{cookiecutter.vcs_username}})
 
-## License
+### License
 {{ cookiecutter.license }}
