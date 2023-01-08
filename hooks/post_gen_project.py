@@ -11,3 +11,7 @@ elif "{{cookiecutter.vcs}}" == "Github":
     
 else:
     pass
+
+os.system('touch .envs/dev.env')
+os.system('touch .envs/prod.env')
+
