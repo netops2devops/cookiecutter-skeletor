@@ -8,10 +8,16 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-bandit = "^1.7.4"
-coverage = "*"
-flake8 = "*"
-black = "^22.12.0"
 pytest = "^7.2.0"
-mypy= "*"
+mypy = "*"
+black = "*"
+flake8 = "*"
+bandit = "*"
+coverage = "*"
 {% if cookiecutter.cli_builder == 'y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}
+
+[tool.poetry.groups.dev]
+optional = true
+
+[tool.poetry.groups.dev.dependencies]
+# placeholder for dev env dependencies
