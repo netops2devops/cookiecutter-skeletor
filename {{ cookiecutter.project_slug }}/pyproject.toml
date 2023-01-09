@@ -16,8 +16,8 @@ bandit = "*"
 coverage = "*"
 {% if cookiecutter.cli_builder == 'y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}
 
-[tool.poetry.groups.dev]
+[tool.poetry.group.dev]
 optional = true
 
-[tool.poetry.groups.dev.dependencies]
+[tool.poetry.group.dev.dependencies]
 # placeholder for dev env dependencies
