@@ -23,7 +23,7 @@ Setup a new skeleton python barebones project
 cookiecutter https://github.com/netops2devops/cookiecutter-skeletor.git
 ```
 
-This generates a project structure as shown below. A git repository is automatically initialized upon project creation. As per best practices `.envs` is created but already put under .gitignore
+This generates a project structure as shown below. A git repository is automatically initialized upon project creation. As per best practices `.envs` dir is created to store environment vars but is already put under `.gitignore`
 ```
 ❯ tree -a mypkg
 mypkg
