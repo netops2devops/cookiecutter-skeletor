@@ -5,7 +5,6 @@
     "vcs_username": "netops2devops",
     "project_name": "awesome-pyproject",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "inner_package_name": "{{ cookiecutter.project_slug }}",
     "project_short_description": "modern skeleton for a python project",
     "version": "0.1.0",
     "cli_builder": "n",

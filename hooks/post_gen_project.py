@@ -15,3 +15,5 @@ else:
 os.system('touch .envs/dev.env')
 os.system('touch .envs/prod.env')
 
+if "{{cookiecutter.cli_builder}}" == "y":
+    os.system('touch src/{{cookiecutter.project_slug}}/cli.py')

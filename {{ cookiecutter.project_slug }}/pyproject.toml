@@ -8,12 +8,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pytest = "^7.2.0"
-mypy = "*"
-black = "*"
-flake8 = "*"
-bandit = "*"
-coverage = "*"
 {% if cookiecutter.cli_builder == 'y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}
 
 [tool.poetry.group.dev]
@@ -21,3 +15,14 @@ optional = true
 
 [tool.poetry.group.dev.dependencies]
 # placeholder for dev env dependencies
+pytest = "^7.2.0"
+pytest-cov = "*"
+mypy = "*"
+flake8 = "*"
+bandit = "*"
+coverage = "*"
+ipython = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
