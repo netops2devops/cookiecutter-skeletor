@@ -23,27 +23,34 @@ Setup a new skeleton python barebones project
 cookiecutter https://github.com/netops2devops/cookiecutter-skeletor.git
 ```
 
-This generates a project structure as shown below
+This generates a project structure as shown below. A git repository is automatically initialized upon project creation. As per best practices `.envs` is created but already put under .gitignore
 ```
-❯ tree -a mytestproject
-mytestproject
+❯ tree -a mypkg
+mypkg
+├── .envs
+│   ├── dev.env
+│   └── prod.env
 ├── .gitignore
 ├── .gitlab-ci.yml
 ├── Dockerfile
+├── docker-compose.yml
 ├── Makefile
 ├── README.md
-├── docker-compose.yml
-├── docs/
-├── examples/
+├── docs
+│   ├── contributions.md
+│   ├── install.md
+│   └── intro.md
+├── examples
+│   └── example.py
 ├── pyproject.toml
+├── pytest.ini
+├── settings.cfg
 ├── src
-│   ├── mytestproject
-│   │   └── __init__.py
-│   └── utils
+│   └── mypkg
 │       ├── __init__.py
-│       └── helper.py
-├── tests/
-└── tox.ini
+│       └── utils.py
+└── tests
+    └── test_mypkg.py
 ```
 <br>
 
