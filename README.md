@@ -61,9 +61,6 @@ poetry install
 
 ## To do
 
-- Add `post_gen_project` hooks to further customize layout based on user input
-    - generate CI file(s) based on user choice (github vs. gitlab)
-    - auto initialize a git repo (with base git config) upon project creation
 - Template README, Makefile, CI file
 - preconfigure linters
 - Add Hashicorp Vault integration
