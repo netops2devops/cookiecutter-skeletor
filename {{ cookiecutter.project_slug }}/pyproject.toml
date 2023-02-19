@@ -12,6 +12,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "^3.8"
+logging-json = {git = "https://github.com/Colin-b/logging_json.git"}
 {% if cookiecutter.cli_builder == 'y' or cookiecutter.cli_builder == 'Y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}
 
 [tool.poetry.group.dev]
