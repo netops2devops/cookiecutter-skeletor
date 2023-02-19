@@ -24,7 +24,7 @@ cookiecutter https://github.com/netops2devops/cookiecutter-skeletor.git
 ```
 
 This generates a project structure as shown below. A git repository is automatically initialized upon project creation. As per best practices `.env` is created to store environment vars but is already put under `.gitignore`
-To export environment vars for local development run `export $(cat .env | grep -v "#" | xargs)`
+
 ```
 ❯ tree -a mypkg
 mypkg
@@ -36,7 +36,7 @@ mypkg
 ├── Makefile
 ├── README.md
 ├── docs
-│   ├── contributions.md
+│   ├── development.md
 │   ├── install.md
 │   └── intro.md
 ├── pyproject.toml
