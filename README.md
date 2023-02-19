@@ -2,14 +2,15 @@
 
 This is a slightly opinionated yet simple `cookiecutter` template for my personal use that generates a barebone python project ready to be used with the following: 
 
-- `Black`     for code formatting
-- `pytest`    for unit testing
-- `Poetry`    for package management
-- `coverage`  for test coverage reporting
-- `autopep8`    for code linting
-- `mypy`      for type checking
-- [Typer](http://typer.tiangolo.com) for building CLI apps
-- [bandit](https://github.com/PyCQA/bandit) for security linting
+- `pytest`      for unit testing
+- `bandit`      for security linting
+- `Black`       for code formatting
+- `coverage`    for test coverage reporting
+- `autopep8`    for pep8 formatting
+- `mypy`        for type checking
+- [Poetry](https://python-poetry.org)   for package management
+- [typer](http://typer.tiangolo.com)    for building CLI apps
+
 
 # Requirements 
 

@@ -12,7 +12,8 @@ elif "{{cookiecutter.vcs}}" == "Github":
 else:
     pass
 
+os.system('touch .env')
 os.system('chmod 644 .env')
 
-if "{{cookiecutter.cli_builder}}" == "y":
+if "{{cookiecutter.cli_builder}}" == "y" or "{{cookiecutter.cli_builder}}" == "Y":
     os.system('touch src/{{cookiecutter.project_slug}}/cli.py')

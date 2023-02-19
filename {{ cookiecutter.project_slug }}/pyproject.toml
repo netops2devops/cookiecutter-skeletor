@@ -12,7 +12,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-{% if cookiecutter.cli_builder == 'y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}
+{% if cookiecutter.cli_builder == 'y' or cookiecutter.cli_builder == 'Y' %}typer = {extras = ["all"], version = "^0.7.0"}{% endif %}
 
 [tool.poetry.group.dev]
 optional = true
@@ -28,7 +28,7 @@ pre-commit = "*"
 isort = "^5.12.0"
 autopep8 = "*"
 
-{% if cookiecutter.cli_builder == 'y' %}
+{% if cookiecutter.cli_builder == 'y' or cookiecutter.cli_builder == 'Y' %}
 [tool.poetry.scripts]
 {{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:main"
 {% endif %}
