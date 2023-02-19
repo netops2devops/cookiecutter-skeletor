@@ -108,5 +108,5 @@ dist
 *.pickle
 
 # envs
-.envs/
+.env/
 *.env

@@ -12,11 +12,7 @@ elif "{{cookiecutter.vcs}}" == "Github":
 else:
     pass
 
-os.system('mkdir .envs')
-os.system('touch .envs/dev.env')
-os.system('touch .envs/prod.env')
-os.system('chmod 700 .envs')
-os.system('chmod 600 .envs/*.env')
+os.system('chmod 644 .env')
 
 if "{{cookiecutter.cli_builder}}" == "y":
     os.system('touch src/{{cookiecutter.project_slug}}/cli.py')

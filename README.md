@@ -6,7 +6,7 @@ This is a slightly opinionated yet simple `cookiecutter` template for my persona
 - `pytest`    for unit testing
 - `Poetry`    for package management
 - `coverage`  for test coverage reporting
-- `flake8`    for code linting
+- `autopep8`    for code linting
 - `mypy`      for type checking
 - [Typer](http://typer.tiangolo.com) for building CLI apps
 - [bandit](https://github.com/PyCQA/bandit) for security linting
@@ -18,18 +18,17 @@ This is a slightly opinionated yet simple `cookiecutter` template for my persona
 
 # Usage 
 
-Setup a new skeleton python barebones project 
+To setup a new python project with this cookiecutter
 ```
 cookiecutter https://github.com/netops2devops/cookiecutter-skeletor.git
 ```
 
-This generates a project structure as shown below. A git repository is automatically initialized upon project creation. As per best practices `.envs` dir is created to store environment vars but is already put under `.gitignore`
+This generates a project structure as shown below. A git repository is automatically initialized upon project creation. As per best practices `.env` is created to store environment vars but is already put under `.gitignore`
+To export environment vars for local development run `export $(cat .env | grep -v "#" | xargs)`
 ```
 ❯ tree -a mypkg
 mypkg
-├── .envs
-│   ├── dev.env
-│   └── prod.env
+├── .env
 ├── .gitignore
 ├── .gitlab-ci.yml
 ├── Dockerfile
@@ -40,17 +39,13 @@ mypkg
 │   ├── contributions.md
 │   ├── install.md
 │   └── intro.md
-├── examples
-│   └── example.py
 ├── pyproject.toml
-├── pytest.ini
-├── settings.cfg
 ├── src
 │   └── mypkg
 │       ├── __init__.py
 │       └── utils.py
 └── tests
-    └── test_mypkg.py
+    └── test_utils.py
 ```
 <br>
 
@@ -61,9 +56,7 @@ poetry install
 
 ## To do
 
-- Template README, Makefile, CI file
-- preconfigure linters
 - Add Hashicorp Vault integration
 
-## Authors
+## Author
 Kapil Agrawal
