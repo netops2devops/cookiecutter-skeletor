@@ -1,6 +1,6 @@
 # About 
 
-This is a slightly opinionated yet simple `cookiecutter` template for my personal use that generates a barebone python project ready to be used with the following: 
+This is a slightly opinionated yet simple `cookiecutter` template that generates boilerplate for a barebones python project which is ready to be used with the following: 
 
 - `pytest`      for unit testing
 - `bandit`      for security linting

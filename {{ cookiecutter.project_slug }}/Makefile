@@ -1,4 +1,4 @@
-lint: lint/bandit lint/black lint/isort lint/autopep8 lint/pre-commit
+lint: lint/bandit lint/black lint/isort lint/autopep8
 
 clean:
 	@echo 'y' | docker system prune
@@ -13,19 +13,16 @@ stop:
 	docker compose stop
 
 lint/bandit:
-	bandit -r src
+	poetry run bandit -r src
 
 lint/isort:
-	isort src tests
+	poetry run isort src tests
 
 lint/autopep8:
-	autopep8 src tests
+	poetry run autopep8 src tests
 
 lint/black:
-	black src tests
-
-lint/pre-commit:
-	pre-commit run -a 
+	poetry run black src tests
 
 test:
-	pytest
+	poetry run pytest
