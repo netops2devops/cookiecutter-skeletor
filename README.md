@@ -5,9 +5,7 @@ This is a slightly opinionated yet simple `cookiecutter` template that generates
 - `pytest`      for unit testing
 - `bandit`      for security linting
 - `Black`       for code formatting
-- `coverage`    for test coverage reporting
 - `autopep8`    for pep8 formatting
-- `mypy`        for type checking
 - [Poetry](https://python-poetry.org)   for package management
 - [typer](http://typer.tiangolo.com)    for building CLI apps
 
@@ -37,9 +35,7 @@ mypkg
 ├── Makefile
 ├── README.md
 ├── docs
-│   ├── development.md
-│   ├── install.md
-│   └── intro.md
+│   ├── develop.md
 ├── pyproject.toml
 ├── src
 │   └── mypkg

@@ -1,4 +1,4 @@
-lint: lint/bandit lint/black lint/isort lint/autopep8
+lint: lint/bandit lint/black lint/autopep8
 
 clean:
 	@echo 'y' | docker system prune
@@ -14,9 +14,6 @@ stop:
 
 lint/bandit:
 	poetry run bandit -r src
-
-lint/isort:
-	poetry run isort src tests
 
 lint/autopep8:
 	poetry run autopep8 src tests
