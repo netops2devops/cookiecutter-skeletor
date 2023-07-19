@@ -9,7 +9,7 @@ def mkdir_log():
     basedir = Path(__file__).parent
     if not Path.is_dir(basedir / "logs"):
         Path("logs").mkdir(parents=True, exist_ok=True)
-        Path("logs/notify.log").touch()
+        Path("logs/app.log").touch()
 
 
 def json_logger():
@@ -23,7 +23,7 @@ def json_logger():
     logger.setLevel(log_level)
 
     mkdir_log()
-    logfile_path = str(Path(__file__).parent) + "/logs/notify.log"
+    logfile_path = str(Path(__file__).parent) + "/logs/app.log"
     file_handler = logging.FileHandler(logfile_path)
 
     json_formatter = logging_json.JSONFormatter(
