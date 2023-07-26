@@ -108,3 +108,4 @@ dist
 *.pickle
 
 # env file
+.env
