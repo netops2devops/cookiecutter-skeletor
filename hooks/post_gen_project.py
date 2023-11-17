@@ -1,16 +1,18 @@
-import os 
+import subprocess
+
+# *.env is in .gitignore
+subprocess.run(["chmod", "644", ".env"])
+
+subprocess.run(["git", "init", "."])
 
 if "{{cookiecutter.vcs}}" == "Gitlab":
-    os.system('touch .gitlab-ci.yml')
-    os.system('git init .')
-
+    subprocess.run(["touch", ".gitlab-ci.yml"])
 
 elif "{{cookiecutter.vcs}}" == "Github":
-    os.system('mkdir .github/workflows')
-    os.system('git init .')
+    subprocess.run(["mkdir", ".github"])
+    subprocess.run(["mkdir", ".github/workflows"])
     
 else:
     pass
 
-os.system('chmod 644 .env')
-os.system('echo "\n*.env" >> .gitignore')
+subprocess.run(["sh", "-c", "poetry install --with=dev"])

@@ -35,11 +35,8 @@ Temporary Items
 build/
 develop-eggs/
 dist/
-downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -73,11 +70,14 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-
 # Sphinx documentation
 docs/_build/
+
+# Docs
+dist
+*.doctree
+*.pickle
+
 
 # IntelliJ Idea family of suites
 .idea
@@ -91,18 +91,15 @@ docs/_build/
 # PyBuilder
 target/
 
-# Cookiecutter
-output/
-python_boilerplate/
-cookiecutter-pypackage-env/
-
 # IDE settings
 .vscode/
 venv/
 .venv/
 .python-version
 
-# Docs
-dist
-*.doctree
-*.pickle
+# environment variables
+poetry.lock
+*.env
+*.envrc
+
+*.log
