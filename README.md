@@ -56,7 +56,11 @@ Finally, install the dependeneices in `pyproject.toml` under the new project roo
 poetry install 
 ```
 <br>
-Lastly, export the environment variables `export $(cat .env | grep -v "#" | xargs)`
+
+Lastly, export the environment variables 
+```
+export $(cat .env | grep -v "#" | xargs)
+```
 
 ## To do
 
