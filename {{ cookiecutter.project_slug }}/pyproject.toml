@@ -11,8 +11,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
-python = "^3.8"
-logging-json = "*"
+python = "^3.9"
 
 [tool.poetry.group.dev]
 optional = true

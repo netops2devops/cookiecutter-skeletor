@@ -1,12 +1,13 @@
 lint: lint/bandit lint/black lint/autopep8
 
 clean:
+	docker compose down --remove-orphans --volumes
 	@echo 'y' | docker system prune
 
 build:
 	docker compose build --no-cache
 
-start:
+init:
 	docker compose up --remove-orphans -d
 
 stop:

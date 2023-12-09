@@ -1,3 +1,4 @@
+import shutil
 import subprocess
 
 # *.env is in .gitignore
@@ -14,5 +15,17 @@ elif "{{cookiecutter.vcs}}" == "Github":
     
 else:
     pass
+
+if "{{cookiecutter.project_layout}}" == "flat":
+    shutil.rmtree("src")
+    shutil.rmtree("docs")
+    shutil.rmtree("tests")
+    subprocess.run(["rm", "Makefile"])
+    subprocess.run(["rm", "docker-compose.yml"])
+    subprocess.run(["rm", "Dockerfile"])
+    subprocess.run(["touch", "main.py"])
+
+if "{{cookiecutter.config_file}}":
+    subprocess.run(["touch", "config.yaml"])
 
 subprocess.run(["sh", "-c", "poetry install --with=dev"])

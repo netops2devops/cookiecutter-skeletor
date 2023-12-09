@@ -27,20 +27,25 @@ This generates a project structure as shown below. A git repository is automatic
 ```
 ❯ tree -a mypkg
 mypkg
-├── .env
 ├── .gitignore
+├── .env
 ├── .gitlab-ci.yml
+├── .pre-commit-config.yaml
 ├── Dockerfile
-├── docker-compose.yml
 ├── Makefile
 ├── README.md
+├── config.yaml
+├── docker-compose.yml
 ├── docs
-│   ├── develop.md
+│   ├── development.md
+│   ├── install.md
+│   └── intro.md
+├── poetry.lock
 ├── pyproject.toml
 ├── src
 │   └── mypkg
 │       ├── __init__.py
-│       └── utils.py
+│       └── logger.py
 └── tests
     └── test_utils.py
 ```
@@ -50,6 +55,8 @@ Finally, install the dependeneices in `pyproject.toml` under the new project roo
 ```
 poetry install 
 ```
+<br>
+Lastly, export the environment variables `export $(cat .env | grep -v "#" | xargs)`
 
 ## To do
 

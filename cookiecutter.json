@@ -5,7 +5,9 @@
     "vcs_username": "netops2devops",
     "project_name": "mypkg",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_short_description": "modern skeleton for a python project",
+    "project_layout": ["src", "flat"],
+    "config_file": true,
+    "project_short_description": "My awesome project",
     "version": "0.1.0",
     "license": ["GPL-2.0", "Apache-2.0", "MIT", "BSD-3-Clause", "None"]
   }
