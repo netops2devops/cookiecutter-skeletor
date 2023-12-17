@@ -1,0 +1,12 @@
+services:
+  {{cookiecutter.package_name}}:
+    image: {{cookiecutter.package_name}}/dev
+    container_name: {{cookiecutter.package_name}}
+    build:
+      context: .
+      dockerfile: .
+    env_file:
+      - .env
+    #volumes:
+    # - 
+    tty: true

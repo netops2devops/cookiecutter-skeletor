@@ -8,10 +8,8 @@
 
 ## Usage
 
-## Contribute
-
 ### Author 
-{{ cookiecutter.full_name }} [{{cookiecutter.vcs_username}}](https://{{cookiecutter.vcs}}.com/{{cookiecutter.vcs_username}})
+{{ cookiecutter.author_name }} [{{cookiecutter.vcs_username}}](https://{{cookiecutter.vcs}}.com/{{cookiecutter.vcs_username}})
 
 ### License
 {{ cookiecutter.license }}

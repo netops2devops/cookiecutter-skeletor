@@ -17,6 +17,10 @@ else:
     pass
 
 if "{{cookiecutter.project_layout}}" == "flat":
+    shutil.move("src/{{cookiecutter.project_slug}}", ".")
+    shutil.rmtree("src")
+    
+if "{{cookiecutter.project_layout}}" == "minimal":
     shutil.rmtree("src")
     shutil.rmtree("docs")
     shutil.rmtree("tests")
