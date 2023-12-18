@@ -16,7 +16,7 @@ elif "{{cookiecutter.vcs}}" == "Github":
 else:
     pass
 
-if "{{cookiecutter.project_layout}}" == "flat":
+if "{{cookiecutter.project_layout}}" == "non-src":
     shutil.move("src/{{cookiecutter.project_slug}}", ".")
     shutil.rmtree("src")
     
